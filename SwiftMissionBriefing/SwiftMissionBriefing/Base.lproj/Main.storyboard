@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HF4-4V-Z56">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftMissionBriefing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agent name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5F7-mQ-jCu">
+                                <rect key="frame" x="60" y="72" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-z5-8fh">
+                                <rect key="frame" x="60" y="110" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epW-Kn-sM3">
+                                <rect key="frame" x="243" y="148" width="114" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Authenticate"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good evening agent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNI-ix-IJh">
+                                <rect key="frame" x="223" y="192" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-3c-k1n">
+                                <rect key="frame" x="60" y="221" width="480" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-qX-UxI">
+                                <rect key="frame" x="200" y="379" width="200" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="JaZ-31-mjQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="Xhn-Wf-9kX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F9p-3c-k1n" firstAttribute="width" secondItem="5F7-mQ-jCu" secondAttribute="width" id="2IW-xk-flg"/>
+                            <constraint firstItem="JzF-z5-8fh" firstAttribute="top" secondItem="5F7-mQ-jCu" secondAttribute="bottom" constant="8" id="B6c-g9-H86"/>
+                            <constraint firstItem="LNI-ix-IJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNz-oo-ehH"/>
+                            <constraint firstItem="F9p-3c-k1n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FuD-UC-lXp"/>
+                            <constraint firstItem="JzF-z5-8fh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3T-H8-yZE"/>
+                            <constraint firstItem="5F7-mQ-jCu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="RDA-MR-GS1"/>
+                            <constraint firstItem="LNI-ix-IJh" firstAttribute="top" secondItem="epW-Kn-sM3" secondAttribute="bottom" constant="8" id="V4u-Bi-IRL"/>
+                            <constraint firstItem="5F7-mQ-jCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEp-jW-3az"/>
+                            <constraint firstItem="epW-Kn-sM3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ck2-5v-jxN"/>
+                            <constraint firstItem="Stp-qX-UxI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwO-uy-GMx"/>
+                            <constraint firstItem="Stp-qX-UxI" firstAttribute="top" secondItem="F9p-3c-k1n" secondAttribute="bottom" constant="8" id="dsU-rG-lAa"/>
+                            <constraint firstItem="5F7-mQ-jCu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gEt-Xd-YbC"/>
+                            <constraint firstItem="epW-Kn-sM3" firstAttribute="top" secondItem="JzF-z5-8fh" secondAttribute="bottom" constant="8" id="gea-Bd-xHm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Stp-qX-UxI" secondAttribute="bottom" constant="49" id="pOt-hv-ve6"/>
+                            <constraint firstItem="JzF-z5-8fh" firstAttribute="width" secondItem="5F7-mQ-jCu" secondAttribute="width" id="pbS-rh-Vm1"/>
+                            <constraint firstItem="F9p-3c-k1n" firstAttribute="top" secondItem="LNI-ix-IJh" secondAttribute="bottom" constant="8" id="sWO-LA-v6K"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qow-Fq-78T"/>
+                    <connections>
+                        <outlet property="agentNameTextField" destination="5F7-mQ-jCu" id="89g-Jq-Yd5"/>
+                        <outlet property="greetingLabel" destination="LNI-ix-IJh" id="9xO-e3-mAT"/>
+                        <outlet property="messageBriefingTextView" destination="F9p-3c-k1n" id="td0-ga-hLz"/>
+                        <outlet property="passwordTextField" destination="JzF-z5-8fh" id="NfM-PJ-2of"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1145" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tRe-Xq-dAI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HF4-4V-Z56" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KdR-2N-HgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xtj-8k-1Rf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pU2-xX-OZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="1047"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TIYLogo" width="240" height="212"/>
+    </resources>
 </document>
