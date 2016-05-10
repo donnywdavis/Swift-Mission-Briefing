@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var agentNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var messageBriefingTextView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.agentNameTextField.text = ""
+        self.passwordTextField.text = ""
+        self.greetingLabel.text = ""
+        self.messageBriefingTextView.text = ""
     }
 
     override func didReceiveMemoryWarning() {
