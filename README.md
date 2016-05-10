@@ -17,10 +17,10 @@ Recreate your first project, Mission Briefing, in Swift! Start with a fresh swif
 
 #### ViewController
 
-* [ ] 1. The UI elements should be set to an "empty string" in viewDidLoad of the ViewController class.
-* [ ] 2. The background color of the view should change to green on successful authentication of the agent.![]()
-* [ ] 2. The greeting label should display "Good evening, Agent [name]", where the agent's last name is pulled from the textfield.
-* [ ] 3. The mission briefing should display the information from MissionBriefing.txt (copy-paste, you don't have to read from the file). It also contains a placeholder for the agent's last name.
+* [x] 1. The UI elements should be set to an "empty string" in viewDidLoad of the ViewController class.
+* [x] 2. The background color of the view should change to green on successful authentication of the agent.![]()
+* [x] 2. The greeting label should display "Good evening, Agent [name]", where the agent's last name is pulled from the textfield.
+* [x] 3. The mission briefing should display the information from MissionBriefing.txt (copy-paste, you don't have to read from the file). It also contains a placeholder for the agent's last name.
 
 ### Hard Mode
 * [ ] Modify the constraints on the imageview (and possibly other views) to cause the logo to shrink when switching to landscape orientation (the current constraints cause it to float off the bottom of the viewable screen). 
