@@ -32,6 +32,9 @@
                                 <rect key="frame" x="243" y="148" width="114" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPj-7Z-t6f"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good evening agent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNI-ix-IJh">
                                 <rect key="frame" x="223" y="192" width="154" height="21"/>
@@ -77,8 +80,7 @@
                     <navigationItem key="navigationItem" id="qow-Fq-78T"/>
                     <connections>
                         <outlet property="agentNameTextField" destination="5F7-mQ-jCu" id="89g-Jq-Yd5"/>
-                        <outlet property="greetingLabel" destination="LNI-ix-IJh" id="9xO-e3-mAT"/>
-                        <outlet property="messageBriefingTextView" destination="F9p-3c-k1n" id="td0-ga-hLz"/>
+                        <outlet property="messageBriefingTextView" destination="F9p-3c-k1n" id="ofO-Gz-hEx"/>
                         <outlet property="passwordTextField" destination="JzF-z5-8fh" id="NfM-PJ-2of"/>
                     </connections>
                 </viewController>

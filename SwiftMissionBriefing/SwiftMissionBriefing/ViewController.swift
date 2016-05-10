@@ -28,7 +28,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // MARK: Button Actions
+    
+    @IBAction func authenticateAction(sender: UIButton) {
+        
+    }
 
 }
 
